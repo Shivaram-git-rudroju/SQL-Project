@@ -1,0 +1,115 @@
+('103','James','Smith','10323','01:30:00','2023-01-05','13th Street 47 W 13th St, New York, NY 10011, USA','01:50:20','20 Cooper Square, New York, NY 10003, USA','4.5');
+('104','Michael','Garcia','10423','10:15:10','2023-01-05','1 E 2nd St, New York, NY 10003, USA','11:20:20','75 3rd Ave, New York, NY 10003, USA','3.2');
+('105','Robert','Smith','10523','02:15:10','2023-01-06','Metrotech Center, Brooklyn, NY 11201, USA','02:20:20','721 Broadway, New York, NY 10003, USA','4.5');
+('106','Maria ','Miller','10623','05:11:10','2023-01-07','Theater Hall','05:20:20','40 E 7th St, New York, NY 10003, USA','4.5');
+('107','David','Brown','10723','03:12:00','2023-01-07','838 Broadway, New York, NY 10003, USA','04:15:12','69 W 9th St, New York, NY 10011, USA','3');
+('108','Maria ','Gonzalez','10823','10:05:19','2023-01-08','19 Washington Square N, New York, NY 10011, USA','10:16:00','371 7th Ave, New York, NY 10001','4.9');
+('109','Mary','Rodriguez','10923','09:30:11','2023-01-10','33 3rd Ave, New York, NY 10003, USA','12:38:00','70 Washington Square South, New York, NY 10012, United States','3.2');
+('110','Maria','Hernandez','11023','08:19:13','2023-01-14','55 East 10th Street, New York, NY 10003, United States','10:26:18','400 Broome St, New York, NY 10013, USA','5');
+('111','Maria','Martinez','11123','07:09:02','2023-01-15','29 Washington Pl, New York, NY 10003, USA','09:40:50','400 Broome St, New York, NY 10013, USA Brown Bldg 29 Washington Pl, New York, NY 10003, USA','4.6');
+('112','James','Johnson','11223','06:59:10','2023-01-20','36 East 8th Street, New York, NY 10003, United States','07:20:15','25 Union Square W, New York, NY 10003, USA','3.3');
+('113','Allen','Taylor','11323','06:19:00','2023-01-20','55 Clark St, Brooklyn, NY 11201, USA','06:45:20','181 Mercer Street, New York, NY 10012, United States','4.5');
+
+('114','Scott','Lee','11423','08:19:10','2023-01-21','345 E 24th St, New York, NY 10010, USA','09:20:00','242 Greene St, New York, NY 10003, USA','4');
+('115','Nguyen','Perez','11523','04:47:17','2023-01-22','East 14th Street, New York, NY 10003, United States','05:20:58','110 W 3rd St, New York, NY 10012, USA','3.9');
+
+
+
+CREATE TABLE Customer(
+Customer_ID INT auto_increment,
+First_name VARCHAR(30),
+Last_name VARCHAR(30),
+Driver_licence INT,
+Pickup_time TIME,
+Pickup_date DATE,
+Pickup_address VARCHAR(60),
+Dropoff_time TIME,
+Dropoff_address VARCHAR(60),
+Rating DECIMAL(3,1));
+
+insert into customer (Customer_ID ,First_name ,Last_name,Driver_licence ,Pickup_time ,Pickup_date ,Pickup_address ,Dropoff_time ,Dropoff_address,Rating)
+values ('101','ravi','teja','10123','05:05:00','2023-01-03','Dunn Hall','05:10:00','wilder tower','4.3'),
+('102','rani','raghu','10223','02:15:10','2023-01-04','Theater Hall','02:20:20','Mynders','4'),
+('103','James','Smith','10323','01:30:00','2023-01-05','13th Street 47 W 13th St, New York, NY 10011, USA','01:50:20','20 Cooper Square, New York, NY 10003, USA','4.5'),
+('104','Michael','Garcia','10423','10:15:10','2023-01-05','1 E 2nd St, New York, NY 10003, USA','11:20:20','75 3rd Ave, New York, NY 10003, USA','3.2'),
+('105','Robert','Smith','10523','02:15:10','2023-01-06','Metrotech Center, Brooklyn, NY 11201, USA','02:20:20','721 Broadway, New York, NY 10003, USA','4.5'),
+('106','Maria ','Miller','10623','05:11:10','2023-01-07','Theater Hall','05:20:20','40 E 7th St, New York, NY 10003, USA','4.5'),
+('107','David','Brown','10723','03:12:00','2023-01-07','838 Broadway, New York, NY 10003, USA','04:15:12','69 W 9th St, New York, NY 10011, USA','3'),
+('108','Maria ','Gonzalez','10823','10:05:19','2023-01-08','19 Washington Square N, New York, NY 10011, USA','10:16:00','371 7th Ave, New York, NY 10001','4.9'),
+('109','Mary','Rodriguez','10923','09:30:11','2023-01-10','33 3rd Ave, New York, NY 10003, USA','12:38:00','70 Washington Square South, New York, NY 10012, United States','3.2'),
+('110','Maria','Hernandez','11023','08:19:13','2023-01-14','55 East 10th Street, New York, NY 10003, United States','10:26:18','400 Broome St, New York, NY 10013, USA','5'),
+('111','Maria','Martinez','11123','07:09:02','2023-01-15','29 Washington Pl, New York, NY 10003, USA','09:40:50','400 Broome St, New York, NY 10013, USA Brown Bldg 29 Washington Pl, New York, NY 10003, USA','4.6'),
+('112','James','Johnson','11223','06:59:10','2023-01-20','36 East 8th Street, New York, NY 10003, United States','07:20:15','25 Union Square W, New York, NY 10003, USA','3.3'),
+('113','Allen','Taylor','11323','06:19:00','2023-01-20','55 Clark St, Brooklyn, NY 11201, USA','06:45:20','181 Mercer Street, New York, NY 10012, United States','4.5'),
+('114','Scott','Lee','11423','08:19:10','2023-01-21','345 E 24th St, New York, NY 10010, USA','09:20:00','242 Greene St, New York, NY 10003, USA','4'),
+('115','Nguyen','Perez','11523','04:47:17','2023-01-22','East 14th Street, New York, NY 10003, United States','05:20:58','110 W 3rd St, New York, NY 10012, USA','3.9');
+select * from customer;
+
+('M221','Max',' Verstappen',' PL',' Audi',' Q8 SUV','black',' MEM121','4.3'),
+('M222','Kurt ',' Thomas',' LL',' BMW',' 320D','black',' MEM122','3.4'),
+('M223','Giovanna ',' Amati',' PL',' Audi',' Q3 SUV','white',' MEM123','4.0'),
+('M224','Joey ',' Logano',' PL',' Audi',' A1 SUV','blue',' MEM124','4.3'),
+('M225','Lewis ',' Hamilton',' PL',' Benz',' Classic','gray',' MEM125','3.5'),
+('M225','Bob ',' Anderson',' PL',' Dodge',' Charger','green',' MEM126','5'),
+('M226','Cliff ',' Allison',' LL',' Audi',' Q8','pink',' MEM127','2.9'),
+('M227','Andrea ',' de Adamich',' PL',' Benz','Classic ','white',' MEM128','4.6'),
+('M229','Michele ',' Alboreto',' PL',' Audi',' Q8 SUV','black',' MEM129','4.5'),
+('M230','Fernando ',' Alonso',' PL',' Dodge',' Charger','black',' MEM130','4.7'),
+('M231','John',' Wick',' PL',' Suzuki','Sedan','white',' MEM131','4.3'),
+('M232','Mavrick',' Tailor',' PL',' Audi',' Q4','orange',' MEM132','3.5');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+insert into customer (Customer_ID ,First_name ,Last_name,Driver_licence ,Pickup_time ,Pickup_date ,Pickup_address ,Dropoff_time ,Dropoff_address,Rating)
+values ('101','ravi','teja','10123','05:05:00','2023-01-03','Dunn Hall','05:10:00','wilder tower','4.3'),
+('102','rani','raghu','10223','02:15:10','2023-01-04','Theater Hall','02:20:20','Mynders','4'),
+('103','James','Smith','10323','01:30:00','2023-01-05','13th Street 47 W 13th St, New York, NY 10011, USA','01:50:20','20 Cooper Square, New York, NY 10003','4.5'),
+('104','Michael','Garcia','10423','10:15:10','2023-01-05','1 E 2nd St, New York, NY 10003, USA','11:20:20','75 3rd Ave, New York, NY 10003','3.2'),
+('105','Robert','Smith','10523','02:15:10','2023-01-06','Metrotech Center, Brooklyn, NY 11201, USA','02:20:20','721 Broadway, New York, NY 10003','4.5'),
+('106','Maria ','Miller','10623','05:11:10','2023-01-07','Theater Hall','05:20:20','40 E 7th St, New York, NY 10003','4.5'),
+('107','David','Brown','10723','03:12:00','2023-01-07','838 Broadway, New York, NY 10003, USA','04:15:12','69 W 9th St, New York, NY 10011','3'),
+('108','Maria ','Gonzalez','10823','10:05:19','2023-01-08','19 Washington Square N, New York, NY 10011, USA','10:16:00','371 7th Ave, New York, NY 10001','4.9'),
+('109','Mary','Rodriguez','10923','09:30:11','2023-01-10','33 3rd Ave, New York, NY 10003, USA','12:38:00','70 Washington Square South, New York, NY 10012,','3.2'),
+('110','Maria','Hernandez','11023','08:19:13','2023-01-14','55 East 10th Street, New York, NY 10003, United States','10:26:18','400 Broome St, New York, NY 10013','5'),
+('111','Maria','Martinez','11123','07:09:02','2023-01-15','29 Washington Pl, New York, NY 10003, USA','09:40:50','SA Brown Bldg 29 Washington Pl, NY 10003','4.6'),
+('112','James','Johnson','11223','06:59:10','2023-01-20','36 East 8th Street, New York, NY 10003, United States','07:20:15','25 Union Square W, New York, NY 10003','3.3'),
+('113','Allen','Taylor','11323','06:19:00','2023-01-20','55 Clark St, Brooklyn, NY 11201, USA','06:45:20','181 Mercer Street, New York, NY 10012','4.5'),
+('114','Scott','Lee','11423','08:19:10','2023-01-21','345 E 24th St, New York, NY 10010, USA','09:20:00','242 Greene St, New York, NY 10003','4'),
+('115','Nguyen','Perez','11523','04:47:17','2023-01-22','East 14th Street, New York, NY 10003, United States','05:20:58','110 W 3rd St, New York, NY 10012','3.9');
+select * from customer;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
